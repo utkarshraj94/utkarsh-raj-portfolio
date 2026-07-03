@@ -96,7 +96,8 @@ ul { list-style: none; }
 .grad { background: var(--grad-t); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
 .hero-role { font-size: 1.25rem; font-weight: 600; color: var(--txt2); margin-bottom: 8px; }
 .hero-sub { font-size: .95rem; color: var(--txt3); font-family: var(--mono); margin-bottom: 32px; }
-.hero-btns { display: flex; gap: 14px; flex-wrap: wrap; margin-bottom: 48px; }
+.hero-btns { display: flex; gap: 14px; flex-wrap: wrap; margin-bottom: 32px; }
+.hero-summary { font-size: .95rem; color: var(--txt2); line-height: 1.7; max-width: 560px; margin-bottom: 40px; }
 .btn {
   display: inline-flex; align-items: center; gap: 8px;
   padding: 13px 26px; font-size: .9rem; font-weight: 600;
@@ -259,12 +260,21 @@ ul { list-style: none; }
   border-radius: var(--r-s); transition: var(--t); font-size: .875rem;
 }
 .cert-row:hover { border-color: var(--border-h); }
+.cert-row > span:not(.cert-badge) { flex: 1; }
 .cert-badge {
   width: 36px; height: 36px; border-radius: var(--r-s); flex-shrink: 0;
   display: grid; place-items: center; font-size: .65rem; font-weight: 800; color: #fff;
 }
 .cert-badge.ibm { background: linear-gradient(135deg,#0f62fe,#0043ce); }
 .cert-badge.lb  { background: linear-gradient(135deg,#7c3aed,#4f46e5); }
+.cert-view-btn {
+  display: inline-flex; align-items: center; gap: 6px; flex-shrink: 0;
+  padding: 6px 14px; font-size: .75rem; font-weight: 600; white-space: nowrap;
+  color: var(--blue-l); background: rgba(59,130,246,.08);
+  border: 1px solid rgba(59,130,246,.2); border-radius: 100px; transition: var(--t);
+}
+.cert-view-btn:hover { background: rgba(59,130,246,.16); border-color: rgba(59,130,246,.35); }
+.cert-view-btn svg { width: 12px; height: 12px; }
 
 /* ── Contact ── */
 .contact-sub { font-size: 1rem; color: var(--txt2); margin-bottom: 32px; max-width: 480px; }
@@ -316,6 +326,8 @@ ul { list-style: none; }
   .about-grid { grid-template-columns: 1fr; }
   .hero h1 { font-size: 2rem; }
   .hero-btns { flex-direction: column; }
+  .cert-row { flex-wrap: wrap; }
+  .cert-row > span:not(.cert-badge) { flex-basis: 100%; }
   .skill-group { flex-direction: column; gap: 10px; }
   .skill-group-label { min-width: unset; }
 }
