@@ -218,6 +218,9 @@ ul { list-style: none; }
 .dl-btn.live   { background: rgba(16,185,129,.1); color: #34d399; border-color: rgba(16,185,129,.2); }
 .dl-btn.live:hover   { background: rgba(16,185,129,.18); border-color: rgba(16,185,129,.35); }
 
+.dl-btn.pdf    { background: rgba(239,68,68,.1); color: #f87171; border-color: rgba(239,68,68,.2); }
+.dl-btn.pdf:hover    { background: rgba(239,68,68,.18); border-color: rgba(239,68,68,.35); }
+
 /* ── Experience ── */
 .exp-list { display: flex; flex-direction: column; gap: 0; position: relative; padding-left: 28px; }
 .exp-list::before {
