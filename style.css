@@ -149,8 +149,8 @@ ul { list-style: none; }
   border: 1px solid rgba(59,130,246,.15); border-radius: 100px; transition: var(--t);
 }
 .skill-pills span:hover { background: rgba(59,130,246,.14); border-color: rgba(59,130,246,.3); }
-.skill-pills .hot { background: rgba(59,130,246,.15); border-color: rgba(59,130,246,.3); color: #fff; font-weight: 600; }
-.skill-pills .learning { background: rgba(139,92,246,.07); color: #a78bfa; border-color: rgba(139,92,246,.15); }
+.skill-pills .hot { background: rgba(59,130,246,.15); border-color: rgba(59,130,246,.3); font-weight: 600; }
+.skill-pills .learning { background: rgba(59,130,246,.07); border-color: rgba(59,130,246,.15); }
 
 /* ── Projects ── */
 .proj-category { margin-bottom: 56px; }
@@ -213,6 +213,9 @@ ul { list-style: none; }
 
 .dl-btn.repo   { background: rgba(255,255,255,.05); color: var(--txt2); border-color: var(--border); }
 .dl-btn.repo:hover   { background: rgba(255,255,255,.09); border-color: var(--border-h); color: var(--txt); }
+
+.dl-btn.live   { background: rgba(16,185,129,.1); color: #34d399; border-color: rgba(16,185,129,.2); }
+.dl-btn.live:hover   { background: rgba(16,185,129,.18); border-color: rgba(16,185,129,.35); }
 
 /* ── Experience ── */
 .exp-list { display: flex; flex-direction: column; gap: 0; position: relative; padding-left: 28px; }
